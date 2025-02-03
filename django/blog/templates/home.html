@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_Uz</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Abdurahmon</div>
+        <div>
+            <a href="{% url 'Home' %}">Главная страница</a>
+            <a href="{% url 'Project' %}">Project</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Code_Uz</h1>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <img src="{% static 'media/home/image_ins.png' %}" alt="Instagram">
+            <div class="card-content">
+                <div class="card-title">Code_Uz</div>
+                <div class="card-text">Instagram kanali</div>
+                <a href="https://www.instagram.com/_code_uz?igsh=eG9mYWw1MHh3eGdl" class="card-button">Instagram
+                    kirish</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <img src="{% static 'media/home/image_tel.png' %}" alt="Telegram">
+            <div class="card-content">
+                <div class="card-title">Code_Uz</div>
+                <div class="card-text">Telegram kanali</div>
+                <a href="https://t.me/+F9YSUDwv-BcxODAy" class="card-button">Telegram kirish</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <img src="{% static 'media/home/image_link.png' %}" alt="Linked in">
+            <div class="card-content">
+                <div class="card-title">Code_Uz</div>
+                <div class="card-text">Linked in kanali</div>
+                <a href="https://www.linkedin.com/in/abdurahmon-abdumavlonov-83910b29b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="card-button">Linked in kirish</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <img src="{% static 'media/home/image.png' %}" alt="Youtube">
+            <div class="card-content">
+                <div class="card-title">Code_Uz</div>
+                <div class="card-text">Youtube kanali</div>
+                <a href="www.youtube.com/@Code_uz686" class="card-button">Youtube kirish</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
